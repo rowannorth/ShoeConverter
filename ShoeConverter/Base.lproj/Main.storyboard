@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,45 +21,30 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="104" width="368" height="30"/>
-                                </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men Shoe Conversion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-GB-sGZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="42" width="170" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use whole numbers only" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-hS-i1Z">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="338" width="189" height="21"/>
-                                </variation>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yb-Bc-wfc">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="158" width="121" height="21"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yz4-rf-TFk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Convert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="338" y="38" width="55" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="convertButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VbS-x6-bLi"/>
                                 </connections>
@@ -68,18 +54,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="196" width="208" height="21"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-ps-RF3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Convert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="338" y="192" width="55" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="convertWomensShoeSizeButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2IX-Hr-5bY"/>
                                 </connections>
@@ -87,22 +67,38 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter US Shoe Size Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53J-di-YBA">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="246" width="368" height="30"/>
-                                </variation>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAN-Bk-Ii6">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="297" width="121" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BAN-Bk-Ii6" firstAttribute="top" secondItem="53J-di-YBA" secondAttribute="bottom" constant="24" id="19I-p0-fUi"/>
+                            <constraint firstItem="AzF-GB-sGZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="1i1-VS-4GH"/>
+                            <constraint firstAttribute="centerY" secondItem="MZM-lk-0Qj" secondAttribute="centerY" constant="190" id="61t-7S-MaA"/>
+                            <constraint firstItem="53J-di-YBA" firstAttribute="top" secondItem="JCg-oL-9s0" secondAttribute="bottom" constant="30" id="FCw-mq-VNW"/>
+                            <constraint firstItem="ejX-hS-i1Z" firstAttribute="top" secondItem="BAN-Bk-Ii6" secondAttribute="bottom" constant="35" id="GZx-1f-Gcc"/>
+                            <constraint firstAttribute="centerY" secondItem="53J-di-YBA" secondAttribute="centerY" constant="38" id="HU9-vd-fDh"/>
+                            <constraint firstItem="Yz4-rf-TFk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="K8A-g7-9WD"/>
+                            <constraint firstItem="53J-di-YBA" firstAttribute="top" secondItem="k0K-ps-RF3" secondAttribute="bottom" constant="25" id="LRs-m6-XeB"/>
+                            <constraint firstItem="53J-di-YBA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MBb-Sz-Uh4"/>
+                            <constraint firstItem="53J-di-YBA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NHo-VC-Uc7"/>
+                            <constraint firstItem="BAN-Bk-Ii6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="O1Q-LN-PZ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yz4-rf-TFk" secondAttribute="trailing" constant="-9" id="PAY-Ma-D1k"/>
+                            <constraint firstItem="MZM-lk-0Qj" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="W11-xq-hb4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k0K-ps-RF3" secondAttribute="trailing" constant="-9" id="auB-Lk-WTi"/>
+                            <constraint firstItem="JCg-oL-9s0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gHf-kX-6GZ"/>
+                            <constraint firstItem="MZM-lk-0Qj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="grG-fO-ppM"/>
+                            <constraint firstItem="1Yb-Bc-wfc" firstAttribute="top" secondItem="MZM-lk-0Qj" secondAttribute="bottom" constant="28" id="lv5-aG-0h9"/>
+                            <constraint firstItem="1Yb-Bc-wfc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="otI-TJ-zJX"/>
+                            <constraint firstItem="AzF-GB-sGZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="rh4-PV-RNp"/>
+                            <constraint firstItem="ejX-hS-i1Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tUo-f6-bwl"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="MZM-lk-0Qj"/>
@@ -114,6 +110,28 @@
                                 <exclude reference="k0K-ps-RF3"/>
                                 <exclude reference="53J-di-YBA"/>
                                 <exclude reference="BAN-Bk-Ii6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1i1-VS-4GH"/>
+                                <exclude reference="rh4-PV-RNp"/>
+                                <exclude reference="61t-7S-MaA"/>
+                                <exclude reference="W11-xq-hb4"/>
+                                <exclude reference="grG-fO-ppM"/>
+                                <exclude reference="lv5-aG-0h9"/>
+                                <exclude reference="otI-TJ-zJX"/>
+                                <exclude reference="gHf-kX-6GZ"/>
+                                <exclude reference="FCw-mq-VNW"/>
+                                <exclude reference="HU9-vd-fDh"/>
+                                <exclude reference="LRs-m6-XeB"/>
+                                <exclude reference="MBb-Sz-Uh4"/>
+                                <exclude reference="NHo-VC-Uc7"/>
+                                <exclude reference="19I-p0-fUi"/>
+                                <exclude reference="O1Q-LN-PZ2"/>
+                                <exclude reference="K8A-g7-9WD"/>
+                                <exclude reference="PAY-Ma-D1k"/>
+                                <exclude reference="GZx-1f-Gcc"/>
+                                <exclude reference="tUo-f6-bwl"/>
+                                <exclude reference="auB-Lk-WTi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -127,6 +145,28 @@
                                 <include reference="k0K-ps-RF3"/>
                                 <include reference="53J-di-YBA"/>
                                 <include reference="BAN-Bk-Ii6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1i1-VS-4GH"/>
+                                <include reference="rh4-PV-RNp"/>
+                                <include reference="61t-7S-MaA"/>
+                                <include reference="W11-xq-hb4"/>
+                                <include reference="grG-fO-ppM"/>
+                                <include reference="lv5-aG-0h9"/>
+                                <include reference="otI-TJ-zJX"/>
+                                <include reference="gHf-kX-6GZ"/>
+                                <include reference="FCw-mq-VNW"/>
+                                <include reference="HU9-vd-fDh"/>
+                                <include reference="LRs-m6-XeB"/>
+                                <include reference="MBb-Sz-Uh4"/>
+                                <include reference="NHo-VC-Uc7"/>
+                                <include reference="19I-p0-fUi"/>
+                                <include reference="O1Q-LN-PZ2"/>
+                                <include reference="K8A-g7-9WD"/>
+                                <include reference="PAY-Ma-D1k"/>
+                                <include reference="GZx-1f-Gcc"/>
+                                <include reference="tUo-f6-bwl"/>
+                                <include reference="auB-Lk-WTi"/>
                             </mask>
                         </variation>
                     </view>
