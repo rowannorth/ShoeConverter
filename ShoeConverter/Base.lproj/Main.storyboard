@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter US Shoe Size Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZM-lk-0Qj">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men Shoe Conversion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-GB-sGZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -67,7 +68,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter US Shoe Size Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53J-di-YBA">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAN-Bk-Ii6">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -112,25 +113,25 @@
                                 <exclude reference="BAN-Bk-Ii6"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1i1-VS-4GH"/>
-                                <exclude reference="rh4-PV-RNp"/>
-                                <exclude reference="61t-7S-MaA"/>
-                                <exclude reference="W11-xq-hb4"/>
-                                <exclude reference="grG-fO-ppM"/>
                                 <exclude reference="lv5-aG-0h9"/>
                                 <exclude reference="otI-TJ-zJX"/>
-                                <exclude reference="gHf-kX-6GZ"/>
                                 <exclude reference="FCw-mq-VNW"/>
                                 <exclude reference="HU9-vd-fDh"/>
                                 <exclude reference="LRs-m6-XeB"/>
                                 <exclude reference="MBb-Sz-Uh4"/>
                                 <exclude reference="NHo-VC-Uc7"/>
+                                <exclude reference="1i1-VS-4GH"/>
+                                <exclude reference="rh4-PV-RNp"/>
                                 <exclude reference="19I-p0-fUi"/>
                                 <exclude reference="O1Q-LN-PZ2"/>
-                                <exclude reference="K8A-g7-9WD"/>
-                                <exclude reference="PAY-Ma-D1k"/>
+                                <exclude reference="gHf-kX-6GZ"/>
+                                <exclude reference="61t-7S-MaA"/>
+                                <exclude reference="W11-xq-hb4"/>
+                                <exclude reference="grG-fO-ppM"/>
                                 <exclude reference="GZx-1f-Gcc"/>
                                 <exclude reference="tUo-f6-bwl"/>
+                                <exclude reference="K8A-g7-9WD"/>
+                                <exclude reference="PAY-Ma-D1k"/>
                                 <exclude reference="auB-Lk-WTi"/>
                             </mask>
                         </variation>
@@ -147,25 +148,25 @@
                                 <include reference="BAN-Bk-Ii6"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1i1-VS-4GH"/>
-                                <include reference="rh4-PV-RNp"/>
-                                <include reference="61t-7S-MaA"/>
-                                <include reference="W11-xq-hb4"/>
-                                <include reference="grG-fO-ppM"/>
                                 <include reference="lv5-aG-0h9"/>
                                 <include reference="otI-TJ-zJX"/>
-                                <include reference="gHf-kX-6GZ"/>
                                 <include reference="FCw-mq-VNW"/>
                                 <include reference="HU9-vd-fDh"/>
                                 <include reference="LRs-m6-XeB"/>
                                 <include reference="MBb-Sz-Uh4"/>
                                 <include reference="NHo-VC-Uc7"/>
+                                <include reference="1i1-VS-4GH"/>
+                                <include reference="rh4-PV-RNp"/>
                                 <include reference="19I-p0-fUi"/>
                                 <include reference="O1Q-LN-PZ2"/>
-                                <include reference="K8A-g7-9WD"/>
-                                <include reference="PAY-Ma-D1k"/>
+                                <include reference="gHf-kX-6GZ"/>
+                                <include reference="61t-7S-MaA"/>
+                                <include reference="W11-xq-hb4"/>
+                                <include reference="grG-fO-ppM"/>
                                 <include reference="GZx-1f-Gcc"/>
                                 <include reference="tUo-f6-bwl"/>
+                                <include reference="K8A-g7-9WD"/>
+                                <include reference="PAY-Ma-D1k"/>
                                 <include reference="auB-Lk-WTi"/>
                             </mask>
                         </variation>
