@@ -31,21 +31,44 @@ class ViewController: UIViewController {
     
     @IBAction func convertButtonPressed(sender: UIButton) {
         
-        let sizeFromTextField = Double((mensShoeSizeTextField.text as NSString).doubleValue)
         let conversionConstant = 30.0
-        mensConvertedShoeSizeLabel.hidden = false
-        let stringWithUpdatedShoeSize = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
-        mensConvertedShoeSizeLabel.text = stringWithUpdatedShoeSize
+        
+        if self.mensShoeSizeTextField.text.isEmpty {
+            let warningAlert = UIAlertView(title: "Hey, that's not a size!", message: "Please enter a valid shoe size", delegate: self, cancelButtonTitle: "Ok")
+            
+            warningAlert.show()
+        } else {
+            
+            let sizeFromTextField = Double((mensShoeSizeTextField.text as NSString).doubleValue)
+            
+            let updatedMensShoeSize = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
+            
+            mensConvertedShoeSizeLabel.text = updatedMensShoeSize
+            mensConvertedShoeSizeLabel.hidden = false
+        }
+        
         
         mensShoeSizeTextField.resignFirstResponder()
     }
     
     @IBAction func convertWomensShoeSizeButtonPressed(sender: UIButton) {
         
-        let sizeFromTextField = Double((womensShoeSizeTextField.text as NSString).doubleValue)
         let conversionConstant = 30.5
-        womensConvertedShoeSizeLabel.hidden = false
-        womensConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
+        
+        if self.womensShoeSizeTextField.text.isEmpty {
+            
+            let warningAlert = UIAlertView(title: "Hey, that's not a size!", message: "Please enter a valid shoe size", delegate: self, cancelButtonTitle: "Ok")
+            
+            warningAlert.show()
+        } else {
+            
+            let sizeFromTextField = Double((womensShoeSizeTextField.text as NSString).doubleValue)
+            
+            let updatedWomensShoeSize = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
+            
+            womensConvertedShoeSizeLabel.text = updatedWomensShoeSize
+            womensConvertedShoeSizeLabel.hidden = false
+        }
         
         womensShoeSizeTextField.resignFirstResponder()
     }
